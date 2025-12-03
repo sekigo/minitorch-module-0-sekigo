@@ -14,7 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Fix colorama conflict
-      run: pip install --ignore-installed colorama
+      run: sudo -H pip3 install --ignore-installed colorama
     - name: Setup
       id: setup
       uses: classroom-resources/autograding-command-grader@v1
